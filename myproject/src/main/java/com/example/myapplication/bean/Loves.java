@@ -3,7 +3,7 @@ package com.example.myapplication.bean;
 import cn.bmob.v3.BmobObject;
 
 /**
- * Created by 程洁 on 2017/12/8.
+ * Created by yiya on 2017/12/8.
  */
 
 public class Loves extends BmobObject {
