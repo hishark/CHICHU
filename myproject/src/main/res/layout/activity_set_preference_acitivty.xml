@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#f4f0f0"
+    tools:context="com.example.myapplication.activity.SetPreferenceAcitivty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/card_background_white"
+        >
+
+
+        <RadioGroup
+            android:id="@+id/rg_showpre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+
+            <RadioButton
+                android:id="@+id/rb_walksteps"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行走步数"
+                android:textSize="20dp"
+                />
+
+            <RadioButton
+                android:id="@+id/rb_walkdistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="行走距离"
+                android:textSize="20dp"
+                />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/bt_setpre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="test"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

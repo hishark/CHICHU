@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:background="@drawable/gridview_background"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textSize="20dp"
+            android:textColor="#8FBC8F"
+            android:text="tv_userRank"
+            android:layout_marginLeft="15dp"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/tv_userRank"
+            android:gravity="center_vertical|center_horizontal"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/avatar_rankList"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:src="@drawable/avatar1"/>
+
+        <TextView
+            android:layout_weight="2"
+            android:text="tv_rankUserName"
+            android:layout_width="100dp"
+            android:layout_height="fill_parent"
+            android:id="@+id/tv_rankUserName"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:layout_weight="2"
+            android:text="tv_rankUserSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:id="@+id/tv_rankUserSteps"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

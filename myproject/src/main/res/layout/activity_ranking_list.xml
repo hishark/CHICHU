@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f7f6f6"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.activity.RankingListActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ranking_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FBC8F"
+
+        app:contentInsetStart="0dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bt_rank_back"
+                android:background="@drawable/top64"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:background="#8FBC8F"
+        android:id="@+id/ll_CurrentUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rank_CurrentUser_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/avatar1"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+        <TextView
+
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            android:id="@+id/rank_CurrentUser_Name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""/>
+
+        <TextView
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:id="@+id/rank_CurrentUser_ranking"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text=""/>
+
+
+    </LinearLayout>
+
+
+
+    <ListView
+
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:id="@+id/lv_rankinglist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    </ListView>
+
+
+</LinearLayout>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.myapplication.activity.CurrentWalkActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/currenr_walk_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FBC8F"
+        app:contentInsetStart="0dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+             >
+
+            <Button
+                android:id="@+id/bt_currenrwalk_back"
+                android:background="@drawable/back64"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:orientation="vertical"
+         android:gravity="center">
+
+         <LinearLayout
+
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/shape"
+             android:paddingBottom="15dip"
+             android:paddingTop="15dip"
+             android:layout_marginBottom="15dp"
+             android:gravity="center"
+             android:orientation="vertical">
+             <TextView
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/step_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+                 android:text="时  间"/>
+             <TextView
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/show_time"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="55sp"
+                 android:text="00:00:00"/>
+         </LinearLayout>
+
+         <LinearLayout
+             android:layout_marginLeft="15dp"
+             android:layout_marginRight="15dp"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/shape"
+             android:paddingBottom="15dip"
+             android:paddingTop="15dip"
+
+
+             android:gravity="center"
+             android:orientation="vertical">
+             <TextView
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/step_num"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="20sp"
+                 android:text="步  数"/>
+             <TextView
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/show_step"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textSize="75sp"
+                 android:text="1207"/>
+         </LinearLayout>
+         <LinearLayout
+             android:id="@+id/btn_row"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+
+             android:layout_marginTop="25dp"
+             android:orientation="horizontal"
+             android:gravity="center">
+
+             <Button
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/bt_cur_start"
+                 android:layout_width="80dp"
+                 android:layout_height="80dp"
+                 android:layout_marginRight="25dp"
+                 android:padding="5dip"
+                 android:background="@drawable/selector_shape_button"
+                 android:text="开始"
+                 android:textSize="20sp" />
+
+             <Button
+
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/bt_cur_stop"
+                 android:layout_width="80dp"
+                 android:layout_height="80dp"
+                 android:layout_marginRight="25dp"
+                 android:background="@drawable/selector_shape_button"
+                 android:padding="5dip"
+                 android:text="暂停"
+                 android:textSize="20sp"/>
+             <Button
+                 android:textColor="#FFFFFF"
+                 android:id="@+id/bt_cur_end"
+                 android:layout_width="80dp"
+                 android:layout_height="80dp"
+                 android:background="@drawable/selector_shape_button"
+                 android:padding="5dip"
+                 android:text="结束"
+                 android:textSize="20sp"/>
+         </LinearLayout>
+
+     </LinearLayout>
+
+
+
+</LinearLayout>

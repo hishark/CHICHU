@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f1eeee"
+
+    android:layout_marginBottom="50dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feddback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FBC8F"
+        app:contentInsetStart="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/bt_choose_back"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:text="彳亍"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gridview_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rank_CurrentUser_avatar"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:src="@drawable/defaultavatar"
+            app:civ_border_color="#7a7a7a"
+            app:civ_border_width="1dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_userName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center_vertical"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/setting_img_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/tv_userContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="这个用户很懒，什么也没留下"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <GridView
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/gridview_background"
+            android:id="@+id/gridviewOfset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3">
+        </GridView>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:id="@+id/bt_logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="注 销"
+            android:textSize="15dp"
+            android:textColor="#8FBC8F"
+            android:background="@drawable/selector_button_test1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

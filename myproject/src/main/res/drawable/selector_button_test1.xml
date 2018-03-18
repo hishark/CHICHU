@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按钮按下时-->
+    <item
+        android:drawable="@drawable/cardview_pressed"
+        android:state_pressed="true">
+    </item>
+
+    <!-- 默认时 -->
+    <item
+        android:drawable="@drawable/gridview_background">
+    </item>
+
+</selector>

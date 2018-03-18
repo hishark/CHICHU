@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+// 添加插件
+apply plugin: "com.mob.sdk"
+// 在MobSDK的扩展中注册MobAPI的相关信息
+MobSDK {
+    appKey "235783b881eef"
+    appSecret "a6dc6fa8b6fafccc778e65375b60c76e"
+    MobAPI {}
+}
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.example.myapplication"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        android.defaultConfig.vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main() {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+
+    //以下SDK开发者请根据需要自行选择
+    //bmob-sdk：Bmob的android sdk包，包含了Bmob的数据存储、文件等服务，以下是最新的bmob-sdk:
+    //3.5.5：请务必查看下面注释[1]
+
+    //圆形图像
+    
+
+    compile files('libs/baidumapapi_map_v4_3_1.jar')
+
+    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.android.support:support-vector-drawable:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'cn.bmob.android:bmob-sdk:3.5.5'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    testCompile 'junit:junit:4.12'
+}

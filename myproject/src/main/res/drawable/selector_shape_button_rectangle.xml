@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 按钮按下时-->
+    <item
+        android:drawable="@drawable/rectangle_pressed_state"
+        android:state_pressed="true">
+    </item>
+
+    <!-- 按钮不可用时-->
+    <item
+        android:drawable="@drawable/rectangle_unabled_state"
+        android:state_enabled="false">
+    </item>
+
+    <!-- 默认时 -->
+    <item
+        android:drawable="@drawable/rectangle_default_state">
+
+    </item>
+
+</selector>

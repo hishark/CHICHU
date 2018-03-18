@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f7f6f6"
+    tools:context="com.example.myapplication.activity.ChooseMapOrNotActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/feddback_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FBC8F"
+        app:contentInsetStart="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/bt_choose_back"
+                android:background="@drawable/back64"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/gridview_background"
+            android:id="@+id/weatherforecast"
+            >
+
+
+            <ImageView
+                android:id="@+id/img_weather"
+                android:layout_gravity="center"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/yin"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="天气"
+                        />
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:id="@+id/tv_weather_weather"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="阴"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="温度"
+                        />
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:id="@+id/tv_weather_temp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="5°C"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="5dp">
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="空气质量"
+                        />
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:id="@+id/tv_weather_air"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="良"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:textSize="15dp"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:text="运动指数"
+                        />
+                    <TextView
+                        android:textSize="15dp"
+                        android:id="@+id/tv_weather_sport"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="不适宜"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/mapp4"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/bt_map"
+                    android:textColor="#8FBC8F"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:background="@drawable/selector_button_test1"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="轨迹"/>
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:src="@drawable/clock2"
+                    android:layout_marginBottom="10dp"/>
+                <Button
+                    android:id="@+id/bt_notmap"
+                    android:gravity="center"
+                    android:background="@drawable/selector_button_test1"
+                    android:textSize="15dp"
+                    android:textColor="#8FBC8F"
+                    android:padding="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="数据"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

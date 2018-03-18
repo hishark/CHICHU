@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.myapplication.activity.CommentActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FBC8F"
+        app:contentInsetStart="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/bt_commentback"
+                android:background="@drawable/back64"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:id="@+id/commit_scroll"
+        android:layout_below="@+id/comment_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+        <LinearLayout
+            android:padding="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/comment_item"
+                layout="@layout/post_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dddddd" />-->
+
+            <ListView
+                android:layout_marginTop="5dp"
+                android:id="@+id/comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/loadmore"
+                style="@style/load_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="12dip"
+                android:text="加载更多评论"/>
+                <!--TODO
+                android:textColor="@drawable/selector_load_more" -->
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/area_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="4dip">
+
+        <EditText
+            android:id="@+id/comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dip"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="来评论一句吧"
+            android:minHeight="40dp"
+            android:paddingLeft="4dip">
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/comment_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0"
+            android:background="@drawable/selector_button"
+            android:gravity="center"
+            android:minWidth="80dp"
+            android:padding="8dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="评论"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+    </LinearLayout>
+</RelativeLayout>

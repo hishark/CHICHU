@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f7f6f6"
+    android:layout_height="match_parent"
+    tools:context="com.example.myapplication.activity.ModifyDataActivity"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/ranking_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8FBC8F"
+
+        app:contentInsetStart="0dp"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bt_modify_back"
+                android:background="@drawable/top64"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                />
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:background="#8FBC8F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/user_avatar"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/avatar1"
+            app:civ_border_color="#FFFFFF"
+            app:civ_border_width="2dp" />
+
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:id="@+id/modify_CurrentUser_Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text=""/>
+            <ImageView
+                android:id="@+id/img_gender"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/gridview_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tv_sign"
+                style="@style/textview_modifydata"
+                android:text="个性签名"/>
+            <EditText
+                android:id="@+id/et_sign"
+                android:layout_toRightOf="@+id/tv_sign"
+                android:layout_alignBottom="@+id/tv_sign"
+                android:layout_alignTop="@+id/tv_sign"
+                style="@style/edit_modifydata" />
+
+        </RelativeLayout>
+
+        <!--<View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#808080"
+            android:layout_marginBottom="15dp"/>-->
+        <include
+            layout="@layout/viewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:id="@+id/tv_region"
+                style="@style/textview_modifydata"
+                android:paddingLeft="10dp"
+                android:textSize="18dp"
+                android:text="地区"
+                />
+            <EditText
+                android:id="@+id/et_region"
+                android:layout_toRightOf="@+id/tv_region"
+                android:layout_alignBottom="@+id/tv_region"
+                android:layout_alignTop="@+id/tv_region"
+                style="@style/edit_modifydata"/>
+
+        </RelativeLayout>
+
+        <!--<include
+            layout="@layout/viewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tv_password"
+                style="@style/textview_modifydata"
+                android:text="密码"
+                />
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_toRightOf="@+id/tv_password"
+                android:layout_alignBottom="@+id/tv_password"
+                android:layout_alignTop="@+id/tv_password"
+                android:inputType="numberPassword"
+                style="@style/edit_modifydata"/>
+        </RelativeLayout>-->
+
+        <include
+            layout="@layout/viewstyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp">
+            <TextView
+                android:textSize="18dp"
+                android:id="@+id/tv_gender"
+                style="@style/textview_modifydata"
+                android:text="性别"
+                />
+            <EditText
+                android:id="@+id/et_gender"
+                android:layout_toRightOf="@+id/tv_gender"
+                android:layout_alignBottom="@+id/tv_gender"
+                android:layout_alignTop="@+id/tv_gender"
+                style="@style/edit_modifydata"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:textColor="#8FBC8F"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_button_test1"
+        android:id="@+id/bt_savedata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="保存"/>
+
+</LinearLayout>

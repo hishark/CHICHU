@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="left"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+      >
+
+
+        <Button
+
+            android:textColor="#5e5b5b"
+            android:id="@+id/buttonStart"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="30dp"
+            android:padding="5dip"
+            android:background="@drawable/selector_map_button"
+            android:text="开始"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp" />
+
+
+
+
+        <Button
+            android:layout_toRightOf="@+id/buttonStart"
+            android:layout_marginRight="30dp"
+            android:textColor="#5e5b5b"
+            android:id="@+id/buttonFinish"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/selector_map_button"
+            android:padding="5dip"
+            android:text="结束"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"/>
+
+
+        <Button
+            android:layout_toRightOf="@+id/buttonFinish"
+            android:textColor="#5e5b5b"
+            android:id="@+id/buttonWatch"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/selector_map_button"
+            android:padding="5dip"
+            android:text="查看"
+            android:layout_alignParentBottom="true"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/progressBarRl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:visibility="gone"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/black"
+            android:text="GPS信号连接中，请稍后..." />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:layout_toLeftOf="@id/info"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</RelativeLayout>

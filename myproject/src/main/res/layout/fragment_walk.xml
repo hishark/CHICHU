@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#f7f6f6"
+
+    tools:context="com.example.myapplication.fragment.WalkFragment">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/feddback_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8FBC8F"
+            app:contentInsetStart="0dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                        <TextView
+                            android:gravity="center"
+                            android:id="@+id/bt_choose_back"
+                            android:textColor="#ffffff"
+                            android:textSize="20dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:text="彳亍"
+                            android:layout_height="40dp" />
+                </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp"
+            android:gravity="center_horizontal|center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_circle_show"
+
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/cake2"
+
+                    android:gravity="center_horizontal|center_vertical"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50dp" />
+
+                <!--<Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:id="@+id/bt_startWalk"
+                    android:text="开  始"
+                    android:textSize="20sp"/>-->
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:layout_width="120dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/bt_startWalk"
+                    android:text="实时行走"
+                    android:textColor="#8FBC8F"
+                    android:textSize="15dp"
+                    android:background="@drawable/selector_button_test1"
+                    />
+        </LinearLayout>
+</LinearLayout>

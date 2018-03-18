@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8FBC8F</color>
+    <color name="colorPrimaryDark">#8FBC8F</color>
+    <color name="colorAccent">#8FBC8F</color>
+    <color name="colorbackground">#8FBC8F</color>
+
+    <color name="green90">#908FBC8F</color>
+    <color name="settingcolor">#668FBC8F</color><!-- 个人设置界面背景色-->
+    <!--计步器用到的-->
+    <color name="main_text_color">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray_default_dark">#666666</color>
+    <drawable name="bt_normal">#8FBC8F</drawable>
+    <drawable name="bt_pressed">#90bc9e</drawable>
+
+</resources>

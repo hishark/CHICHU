@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <!-- OpenGLES 2.0 -->
+    <uses-feature android:glEsVersion="0x00020000" android:required="true" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 摄像头 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".map.DemoApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 最后来搞 -->
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+
+        </activity>
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".activity.SignupActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name=".activity.ModifyDataActivity" />
+        <activity android:name=".activity.FeedBackActivity" />
+        <activity android:name=".activity.CommentActivity" />
+        <activity android:name=".activity.ChatActivity" />
+
+        <!-- 计步功能 -->
+        <service
+            android:name=".service.StepService"
+            android:priority="1000"
+            android:process="com.spring.stepcount.service">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+
+        <!-- 给实时计步器服务注册一下！别忘啦！ -->
+        <service android:name=".service.StepCounterService" />
+
+        <activity android:name=".activity.SendPostActivity" />
+        <activity android:name=".activity.RankingListActivity" />
+        <activity android:name=".activity.StepCounterActivity" />
+        <activity android:name=".activity.ShowWalkInfoActivity"></activity>
+        <activity android:name=".activity.SetPreferenceAcitivty" />
+        <activity
+            android:name=".map.DynamicDemo"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"></activity>
+
+        <!-- 百度地图key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="dDMDfjeLU3k0lwYa50DTGsbdvHNK5Hzv" />
+        <!-- mob key  -->
+        <meta-data
+            android:name="Mob-AppKey"
+            android:value="235783b881eef"/>
+           <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service>
+
+        <!--<service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action
+                    android:name="com.baidu.location.service_v2.2">
+                </action>
+            </intent-filter>
+        </service>-->
+
+
+
+        <activity android:name=".activity.ChooseMapOrNotActivity"></activity>
+    </application>
+
+</manifest>
