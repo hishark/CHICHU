@@ -1,6 +1,6 @@
-# CHICHU
+# 彳亍
 
-大三上在工作室与@YiyaCheng完成的弱智小项目
+大三上在工作室@hishark与@YiyaCheng完成的弱智小项目
 
 ### 视频演示
 1. [行走记录](http://p3as6e9rs.bkt.clouddn.com/行走记录.mp4)
