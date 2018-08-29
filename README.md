@@ -1,6 +1,6 @@
 # 彳亍
 
-大三上[@hishark](https://github.com/hishark)与[@YiyaCheng](https://github.com/YiyaCheng)完成的弱智小项目
+大三上与[@YiyaCheng](https://github.com/YiyaCheng)完成的弱智小项目
 
 ### 视频演示
 1. [行走记录](http://p3as6e9rs.bkt.clouddn.com/行走记录.mp4)
