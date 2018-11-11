@@ -3,6 +3,8 @@
 大三上与[@YiyaCheng](https://github.com/YiyaCheng)完成的小项目
 
 ### 视频演示
+- [合集查看](https://www.bilibili.com/video/av35679634)
+
 1. [行走记录](//player.bilibili.com/player.html?aid=35679634&cid=62583859&page=3)
 2. [反馈+日排行榜](//player.bilibili.com/player.html?aid=35679634&cid=62583859&page=2)
 3. [设置目标、偏好](//player.bilibili.com/player.html?aid=35679634&cid=62583859&page=4)
@@ -10,6 +12,8 @@
 5. [登录注册修改资料](//player.bilibili.com/player.html?aid=35679634&cid=62583859&page=1)
 6. [实时行走](//player.bilibili.com/player.html?aid=35679634&cid=62583859&page=5)
 7. [找伴](//player.bilibili.com/player.html?aid=35679634&cid=62583859&page=7)
+
+
 
 ### 截图展示
 
